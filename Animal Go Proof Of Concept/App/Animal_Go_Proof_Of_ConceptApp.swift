@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct Animal_Go_Proof_Of_ConceptApp: App {
@@ -13,5 +14,6 @@ struct Animal_Go_Proof_Of_ConceptApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: [Animal.self])
     }
 }
